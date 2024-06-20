@@ -42,3 +42,32 @@ nav {
     align-items: end;
     justify-content: right;
 }
+
+.Container_2 {
+    display: grid;
+    grid-template-areas: 
+        "main main main"
+        "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 0.1fr);
+    gap: 0.625;
+}
+
+#main {
+    grid-area: main;
+    text-align: center;
+    
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(180, 43, 43);
+    border: 0.0625em solid black;
+    text-align: center;
+    font-size: small;
+    color: whitesmoke;
+}
+
+#footer {
+    grid-area: footer;
+}
